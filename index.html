@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Survey Form</title>
+        <link rel="stylesheet" href="styles.css">
+    </head>
+
+    <body>
+        <header>
+            <h1 id="title">Survey Form</h1>
+            <p id="description">
+                A Survey Form Flexible For Your Desires
+            </p>
+        </header>
+        <main>
+            <form action="" id="survey-form" method="post">
+                <fieldset id="form-content">
+                    <fieldset id="personal-info">
+                        <label for="name" id="name-label">
+                            Name
+                            <input type="text" id="name" placeholder="Your Name" required>
+                        </label>
+                        <label for="email" id="email-label">
+                            Email
+                            <input type="email" id="email" placeholder="Your Email" required>
+                        </label>
+                        <label for="age" id="number-label">
+                            Age
+                            <input type="number" id="number" min='18' max="120" placeholder="Your Age">
+                        </label>
+                    </fieldset>
+                    <fieldset id="field-info">
+                        <label for="dropdown">
+                            Field of Interest / Study / Work
+                            <select name="field" id="dropdown">
+                                <option value="none" disabled selected>Select One</option>
+                                <option value="software">Software</option>
+                                <option value="security">Cyber Security</option>
+                                <option value="both">Both</option>
+                            </select>
+                        </label>
+                    </fieldset>
+                    <fieldset id="years">
+                        How Many Years You Spent?
+                        <label for="one">
+                            <input type="radio" name="length" value="one-to-three" id="one">
+                            0-1
+                        </label>
+                        <label for="three">
+                            <input type="radio" name="length" value="one-to-three" id="three">
+                            1-3
+                        </label>
+                        <label for="five">
+                            <input type="radio" name="length" value="three-to-five" id="five">
+                            3-5
+                        </label>
+                        <label for="more">
+                            <input type="radio" name="length" value="five-and-more" id="more">
+                            5-more
+                        </label>
+                    </fieldset>
+                    <fieldset id="platforms">
+                        Which Platforms Do You Use?
+                        <label for="so">
+                            <input type="checkbox" name="platforms" value="so" id="so">
+                            Stack Overflow
+                        </label>
+                        <label for="fcc">
+                            <input type="checkbox" name="platforms" value="fcc" id="fcc">
+                            freecodecamp
+                        </label>
+                        <label for="tryhackme">
+                            <input type="checkbox" name="platforms" value="tryhackme" id="tryhackme">
+                            TryHackMe
+                        </label>
+                        <label for="github">
+                            <input type="checkbox" name="platforms" value="github" id="github">
+                            Github
+                        </label>
+                        <label for="leetcode">
+                            <input type="checkbox" name="platforms" value="leetcode" id="leetcode">
+                            LeetCode
+                        </label>
+                    </fieldset>
+                    <fieldset id="comment">
+                        <label for="comment">
+                            Your comments about the platforms
+                            <textarea name="comment" id="comment" cols="30" rows="10"
+                                placeholder="Your comments..."></textarea>
+                        </label>
+                    </fieldset>
+                    <button type="submit" id="submit">Submit</button>
+                </fieldset>
+            </form>
+        </main>
+        <footer></footer>
+    </body>
+
+</html>
