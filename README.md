@@ -1,5 +1,5 @@
 # Survey Form
-One Of The FreeCodeCamp Responsive Web Design Certificate Project
+One Of The FreeCodeCamp Responsive Web Design Certificate Projects
 
 ## User Stories:
 1. You should have a page title in an h1 element with an id of title
